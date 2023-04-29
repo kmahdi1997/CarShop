@@ -38,7 +38,7 @@
             </div>
         </div>
         <!-- mobile menu -->
-        <div class="hidden mobile-menu bg-gray-900 absolute -right-1 left-1/3 top-[68px] h-full z-20">
+        <div class="opacity-0 invisible transition ease-in-out duration-500 mobile-menu bg-gray-900 fixed -right-1 left-1/3 top-[68px] h-full z-20">
             <ul class="">
                 <li class="active"><a href="index.html" class="block text-sm px-4 py-4 text-white bg-[#A55C30] font-semibold">Home</a></li>
                 <li><a href="#services" class="block text-sm px-4 py-4 text-white hover:bg-[#A55C30] transition duration-300">About</a></li>
@@ -52,21 +52,28 @@
         const menu = document.querySelector(".mobile-menu");
 
         btn.addEventListener("click", () => {
-            menu.classList.toggle("hidden");
+            menu.classList.toggle("opacity-0");
+            menu.classList.toggle("invisible");
         });
     </script>
         </div>
     </header>
 
     <div class="about">
-        <div class="flex h-screen">
-            <div class="w-1/2 bg-red-500 pt-40 pb-10">
-                <h1 class="text-4xl md:text-6xl md:leading-normal font-medium border-l-4 border-[#F8D7A4] ml-20 lg:ml-40 px-4">premium <br> and Luxorious <br> chauffeur <br> Services</h1>
+        <div class="flex">
+            <div class="w-1/2 bg-red-200 pt-40 pb-10 border-0">
+                <h1 class="text-2xl md:text-4xl lg:text-6xl md:leading-normal lg:leading-normal font-medium border-l-4 border-[#F8D7A4] ml-10 lg:ml-40 px-4">premium <br> and Luxorious <br> chauffeur <br> Services</h1>
             </div>
-            <div class="w-1/2 bg-green-500 pt-40 pb-10 overflow-hidden relative">
+            <div class="w-1/2 bg-green-200 pt-40 pb-10 overflow-hidden relative border-0">
                 <img src="../images/car.png" class="absolute z-10" alt="CAR">
                 <div class="absolute right-0 top-10 bg-[#F8D7A4] transform rotate-45 rounded-tl-[30%] rounded-tr-[40%] rounded-bl-[50%] rounded-br-[30%] w-0 h-0 lg:w-[668px] lg:h-[842px]"></div>
             </div>
+        </div>
+        <div class="flex">
+            <div class="w-1/2 bg-yellow-200 pl-40">
+                <img src="../images/Lexus.jpg" class="w-96" alt="Lexus">
+            </div>
+            <div class="w-1/2 bg-blue-200">2</div>
         </div>
     </div>
 
