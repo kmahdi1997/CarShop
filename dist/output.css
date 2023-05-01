@@ -690,6 +690,14 @@ video {
   overflow: hidden;
 }
 
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
 .rounded-bl-\[50\%\] {
   border-bottom-left-radius: 50%;
 }

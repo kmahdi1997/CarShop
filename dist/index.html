@@ -7,7 +7,7 @@
     <title>carshop</title>
     <link rel="stylesheet" href="output.css">
 </head>
-<body>
+<body class="">
     
     <header>
         <div class="flex items-center bg-gray-200 lg:px-40 px-5 py-4">
@@ -38,7 +38,7 @@
             </div>
         </div>
         <!-- mobile menu -->
-        <div class="opacity-0 invisible transition ease-in-out duration-500 mobile-menu bg-gray-900 fixed -right-1 left-1/3 top-[68px] h-full z-20">
+        <div class="opacity-0 invisible transition ease-in-out duration-500 mobile-menu bg-gray-900 fixed -right-1 left-1/3 top-[68px] h-full z-50">
             <ul class="">
                 <li class="active"><a href="index.html" class="block text-sm px-4 py-4 text-white bg-[#A55C30] font-semibold">Home</a></li>
                 <li><a href="#services" class="block text-sm px-4 py-4 text-white hover:bg-[#A55C30] transition duration-300">About</a></li>
@@ -50,10 +50,12 @@
     <script>
         const btn = document.querySelector("button.mobile-menu-button");
         const menu = document.querySelector(".mobile-menu");
+        const body = document.querySelector("body");
 
         btn.addEventListener("click", () => {
             menu.classList.toggle("opacity-0");
             menu.classList.toggle("invisible");
+            body.classList.toggle("overflow-y-hidden");
         });
     </script>
         </div>
@@ -64,7 +66,7 @@
             <div class="lg:w-1/2 bg-red-200 pt-40 pb-10 border-0">
                 <h1 class="text-2xl md:text-4xl lg:text-6xl md:leading-normal lg:leading-normal font-medium border-l-4 border-[#F8D7A4] ml-10 lg:ml-40 px-4 z-20">premium <br> and Luxorious <br> chauffeur <br> Services</h1>
             </div>
-            <div class="lg:w-1/2 bg-blue-200 pt-40 pb-10 relative border-0 z-50">
+            <div class="lg:w-1/2 bg-blue-200 pt-40 pb-10 relative border-0 z-40">
                 <img src="../images/car.png" class="object-contain z-40" alt="CAR">
                 <div class="absolute -right-10 top-10 bg-[#F8D7A4] transform rotate-12 rounded-tl-[30%] rounded-tr-[40%] rounded-bl-[50%] rounded-br-[30%] w-0 h-0 lg:w-[700px] lg:h-[600px] md:w-[420px] md:h-[360px] -z-10"></div>
             </div>
