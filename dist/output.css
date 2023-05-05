@@ -544,8 +544,20 @@ video {
   left: 33.333333%;
 }
 
+.left-10 {
+  left: 2.5rem;
+}
+
+.right-10 {
+  right: 2.5rem;
+}
+
 .right-20 {
   right: 5rem;
+}
+
+.top-1\/2 {
+  top: 50%;
 }
 
 .top-10 {
@@ -554,42 +566,6 @@ video {
 
 .top-\[68px\] {
   top: 68px;
-}
-
-.right-5 {
-  right: 1.25rem;
-}
-
-.bottom-0 {
-  bottom: 0px;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.left-5 {
-  left: 1.25rem;
-}
-
-.right-10 {
-  right: 2.5rem;
-}
-
-.top-auto {
-  top: auto;
-}
-
-.bottom-auto {
-  bottom: auto;
-}
-
-.top-1\/2 {
-  top: 50%;
-}
-
-.left-10 {
-  left: 2.5rem;
 }
 
 .-z-10 {
@@ -657,6 +633,10 @@ video {
   height: 0px;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
 .h-6 {
   height: 1.5rem;
 }
@@ -669,20 +649,16 @@ video {
   height: 100%;
 }
 
-.h-5 {
-  height: 1.25rem;
-}
-
-.h-10 {
-  height: 2.5rem;
-}
-
 .w-0 {
   width: 0px;
 }
 
 .w-1\/2 {
   width: 50%;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .w-20 {
@@ -701,16 +677,16 @@ video {
   width: 100%;
 }
 
-.w-5 {
-  width: 1.25rem;
-}
-
-.w-10 {
-  width: 2.5rem;
-}
-
 .max-w-lg {
   max-width: 32rem;
+}
+
+.max-w-md {
+  max-width: 28rem;
+}
+
+.max-w-xl {
+  max-width: 36rem;
 }
 
 .rotate-12 {
@@ -838,14 +814,14 @@ video {
   background-color: rgb(248 113 113 / var(--tw-bg-opacity));
 }
 
-.bg-yellow-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 240 138 / var(--tw-bg-opacity));
-}
-
 .bg-red-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(153 27 27 / var(--tw-bg-opacity));
+}
+
+.bg-yellow-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 240 138 / var(--tw-bg-opacity));
 }
 
 .object-contain {
@@ -918,6 +894,11 @@ video {
   text-align: justify;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -946,11 +927,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .font-bold {
@@ -1043,6 +1019,16 @@ video {
   color: rgb(165 92 48 / var(--tw-text-opacity));
 }
 
+@media (min-width: 768px) {
+  .md\:invisible {
+    visibility: hidden;
+  }
+
+  .md\:opacity-0 {
+    opacity: 0;
+  }
+}
+
 @media (min-width: 1024px) {
   .lg\:flex {
     display: flex;
@@ -1066,6 +1052,10 @@ video {
 
   .xl\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .xl\:block {
+    display: block;
   }
 
   .xl\:flex {
@@ -1107,5 +1097,9 @@ video {
 
   .xl\:leading-normal {
     line-height: 1.5;
+  }
+
+  .xl\:opacity-100 {
+    opacity: 1;
   }
 }
